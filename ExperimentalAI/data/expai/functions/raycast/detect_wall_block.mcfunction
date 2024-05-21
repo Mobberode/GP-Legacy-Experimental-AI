@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ #expai:non_solids run function expai:raycast/detect_wall_sucess
