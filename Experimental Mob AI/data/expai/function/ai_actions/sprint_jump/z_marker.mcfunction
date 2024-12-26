@@ -1,0 +1,2 @@
+execute if score #IsBaby expai.condition matches 1 run return run summon marker ~ ~ ~ {Tags:["Sprint_Direction_Baby"],UUID:[I;61,23,37,712441]}
+summon marker ~ ~ ~ {Tags:["Sprint_Direction"],UUID:[I;61,23,37,712440]}

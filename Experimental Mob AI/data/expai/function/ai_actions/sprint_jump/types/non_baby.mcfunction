@@ -1,0 +1,2 @@
+execute if block ~ ~1 ~ #expai:non_solids as 0000003d-0000-0017-0000-0025000adef8 positioned 0.0 0.0 0.0 run return run function expai:motion/get_motion_sprint_jump
+execute as 0000003d-0000-0017-0000-0025000adef8 positioned 0.0 0.0 0.0 run function expai:motion/get_motion_sprint_jump_roofed

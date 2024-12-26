@@ -10,7 +10,7 @@ tag @s add expai.gap_closer_activated
 ##Summon
 summon marker ^ ^ ^ {Tags:[GapRay]}
 #TP
-execute rotated ~ 0 run tp @e[tag=GapRay,sort=nearest,limit=1] ^ ^-0.5 ^0.75 ~ 0
+tp @e[tag=GapRay,sort=nearest,limit=1] ^ ^-0.5 ^0.75 ~ 0
 ##Process
 #Also add to a score if a block is above the entity's head.
 execute rotated ~ 0 unless block ^ ^2 ^ #expai:non_solids run scoreboard players set @e[tag=GapRay,limit=1,sort=nearest] expai.jump_gap_roof_least_amount 0
