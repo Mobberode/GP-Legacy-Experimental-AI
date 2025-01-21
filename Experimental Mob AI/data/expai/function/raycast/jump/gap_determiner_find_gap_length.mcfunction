@@ -1,10 +1,9 @@
-execute positioned as @s run function expai:raycast/jump/gap_determiner_find_gap_length_get_info
 execute positioned as @s unless block ^ ^3 ^ #expai:non_solids run scoreboard players operation @s expai.jump_gap_roof_most_amount = @s expai.jump_gap_length
 execute positioned as @s unless block ^ ^3 ^ #expai:non_solids unless score @s expai.jump_gap_roof_least_amount matches 0.. run scoreboard players operation @s expai.jump_gap_roof_least_amount = @s expai.jump_gap_length
 execute positioned as @s unless block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^3 ^ #expai:non_solids run scoreboard players set @s expai.jump_block_above 1
 execute positioned as @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^ ^-1 #expai:non_solids run scoreboard players set @s expai.jump_block_below 1
 
-tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "expai.jump_gap_roof_least_amount"},"color": "red"},{"score":{"name": "@s","objective": "expai.jump_gap_roof_most_amount"},"color": "blue"},{"score":{"name": "@s","objective": "expai.jump_gap_length"},"color": "gold"},{"score":{"name": "@s","objective": "expai.jump_block_above"},"color": "white"},{"score":{"name": "@s","objective": "expai.jump_block_below"},"color": "gray"}]
+tellraw @a[tag=expai.debug] [{score:{name: "@s",objective: expai.jump_gap_roof_least_amount},color: red},{score:{name: "@s",objective: expai.jump_gap_roof_most_amount},color: blue},{score:{name: "@s",objective: expai.jump_gap_length},color: gold},{score:{name: "@s",objective: expai.jump_block_above},color: white},{score:{name: "@s",objective: expai.jump_block_below},color: gray}]
 
 ##Kill self if block in way
 execute positioned as @s unless block ^ ^1 ^ #expai:non_solids unless block ^ ^2 ^ #expai:non_solids run tag @s add expai.invalid
