@@ -1,5 +1,3 @@
-function expai:behaviour/global
+execute if predicate expai:has_target run return run function expai:start/check_type_target
 
-execute if entity @s[type=creeper,tag=!expai.creeper_lunged] run return run function expai:behaviour/creeper/lunge
-
-execute if entity @s[type=#undead,type=!#skeletons] run return run function expai:behaviour/undead
+function expai:start/behaviour
