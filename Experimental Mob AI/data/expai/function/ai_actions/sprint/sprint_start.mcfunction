@@ -1,1 +1,2 @@
-execute if predicate expai:ground_detect positioned as @s rotated ~ 0 run function expai:ai_actions/sprint/sprint_process
+execute if score @s expai.sprint_duration matches 1.. run return run function expai:ai_actions/sprint/sprint_proceed
+function expai:ai_actions/sprint/sprint_init

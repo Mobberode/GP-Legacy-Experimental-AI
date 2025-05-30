@@ -1,1 +1,1 @@
-execute if entity @s[predicate=expai:ground_detect] at @s rotated ~ 0 if block ^ ^-1 ^1 #expai:non_solids if block ^ ^ ^1 #expai:non_solids if block ^ ^1 ^1 #expai:non_solids run function expai:ai_actions/jump/jump_process
+execute if predicate expai:ground_detect rotated ~ 0 positioned ^ ^ ^0.75 if block ~ ~-1 ~ #expai:non_solids if block ~ ~ ~ #expai:non_solids if block ~ ~1 ~ #expai:non_solids run function expai:ai_actions/jump/jump_process

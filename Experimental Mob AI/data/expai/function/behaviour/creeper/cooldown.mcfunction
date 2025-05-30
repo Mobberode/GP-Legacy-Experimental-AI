@@ -1,0 +1,1 @@
+scoreboard players remove @s expai.creeper_lunge_delay 1

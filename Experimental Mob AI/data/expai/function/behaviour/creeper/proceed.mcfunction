@@ -1,0 +1,1 @@
+execute if entity @n[tag=expai.is_target,dz=5,dx=5,dy=1] run function expai:behaviour/creeper/towards_target

@@ -1,0 +1,2 @@
+execute if score @s expai.jump_gap_roof_least_amount matches 0..4 if score @s expai.jump_gap_roof_most_amount matches 0..4 if score @s expai.jump_gap_length matches 1..4 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.jump_gap_roofed
+execute if score @s expai.jump_gap_roof_least_amount matches 5..6 if score @s expai.jump_gap_roof_most_amount matches 5..6 if score @s expai.jump_gap_length matches 5..6 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.sprint_jump_gap_roofed

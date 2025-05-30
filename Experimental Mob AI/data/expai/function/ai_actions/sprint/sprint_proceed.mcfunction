@@ -1,0 +1,1 @@
+execute if predicate expai:ground_detect run function expai:ai_actions/sprint/tick

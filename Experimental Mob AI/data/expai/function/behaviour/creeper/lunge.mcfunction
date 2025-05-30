@@ -1,2 +1,2 @@
-execute store result score @s expai.creeper_fuse run data get entity @s Fuse
-execute positioned as @s[scores={expai.creeper_fuse=30}] if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..5] run function expai:behaviour/creeper/lunge_towards_player
+execute if score @s expai.creeper_lunge_delay matches 1.. run return run function expai:behaviour/creeper/cooldown
+function expai:behaviour/creeper/proceed
