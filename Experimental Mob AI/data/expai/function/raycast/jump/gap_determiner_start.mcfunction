@@ -10,7 +10,7 @@ tag @s add expai.gap_closer_activated
 ##Summon
 summon marker ~ ~ ~ {Tags:[GapRay]}
 #TP
-tp @e[tag=GapRay,sort=nearest,limit=1] ^ ^-0.5 ^0.5 ~ 0
+tp @e[tag=GapRay,sort=nearest,limit=1] ^ ^-0.5 ^0.25 ~ 0
 ##Process
 #Also add to a score if a block is above the entity's head.
 execute as @e[tag=GapRay,limit=1,sort=nearest] run function expai:raycast/jump/gap_determiner_process

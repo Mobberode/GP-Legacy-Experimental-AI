@@ -26,4 +26,4 @@ particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
 scoreboard players remove @s expai.raycast_steps 1
 scoreboard players add @s expai.jump_gap_length 1
 #Loop
-execute if score @s expai.raycast_steps matches 1.. positioned ^ ^ ^0.5 run function expai:raycast/jump/gap_determiner_find_gap_length
+execute if score @s expai.raycast_steps matches 0.. positioned ^ ^ ^0.25 run function expai:raycast/jump/gap_determiner_find_gap_length
