@@ -18,4 +18,10 @@ scoreboard objectives add expai.sprint_delay dummy
 scoreboard objectives add expai.condition dummy
 
 scoreboard objectives add expai.creeper_lunge_delay dummy
-function expai:behaviours
+
+scoreboard objectives add expai.datafix dummy
+
+##Start the Data Pack
+schedule function expai:start 1.5s
+##BugFixer
+function expai:datafixer

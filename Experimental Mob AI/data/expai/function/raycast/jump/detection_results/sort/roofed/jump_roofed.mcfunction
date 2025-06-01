@@ -1,5 +1,21 @@
-execute if score @s expai.jump_gap_roof_least_amount matches 1..2 if score @s expai.jump_gap_roof_most_amount matches 1..2 if score @s expai.jump_gap_length matches 2..6 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
-execute if score @s expai.jump_gap_roof_least_amount matches 4 if score @s expai.jump_gap_roof_most_amount matches 4 if score @s expai.jump_gap_length matches 7..8 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
-execute if score @s expai.jump_gap_roof_least_amount matches 6 if score @s expai.jump_gap_roof_most_amount matches 5..6 if score @s expai.jump_gap_length matches 9..12 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+#1
+execute \
+if score @s expai.jump_gap_roof_least_amount matches 1..6 \
+if score @s expai.jump_gap_roof_most_amount matches 1..6 \
+if score @s expai.jump_gap_length matches ..6 \
+run return run scoreboard players set #Jump_Roofed expai.condition 1
 
-#execute if score @s expai.jump_gap_roof_least_amount matches 0.. if score @s expai.jump_gap_roof_most_amount matches 2.. if score @s expai.jump_gap_length matches 4.. unless score @s expai.jump_gap_roof_least_amount = @s expai.jump_gap_roof_most_amount as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run msg @a[tag=expai.debug] expai.jump_roofed impossible
+#2
+execute \
+if score @s expai.jump_gap_roof_least_amount matches 7..10 \
+if score @s expai.jump_gap_roof_most_amount matches 7..10 \
+if score @s expai.jump_gap_length matches ..9 \
+run return run scoreboard players set #Jump_Roofed expai.condition 1
+
+#3
+execute \
+if score @s expai.jump_gap_roof_least_amount matches 10.. \
+if score @s expai.jump_gap_roof_most_amount matches 10.. \
+if score @s expai.jump_gap_length matches ..12 \
+run return run scoreboard players set #Jump_Roofed expai.condition 1
+##If else, Impossible

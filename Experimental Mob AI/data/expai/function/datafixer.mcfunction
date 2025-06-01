@@ -1,0 +1,1 @@
+execute as @e[tag=expai_ai_changes_disabled] if score @s expai.datafix < #Current expai.datafix run function expai:datafix/tags

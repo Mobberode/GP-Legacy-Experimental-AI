@@ -4,19 +4,36 @@ execute unless block ~ ~3 ~ #expai:non_solids unless score @s expai.jump_gap_roo
 
 execute unless block ~ ~1 ~ #expai:non_solids if block ~ ~2 ~ #expai:non_solids if block ~ ~3 ~ #expai:non_solids run scoreboard players set @s expai.jump_block_above 1
 
-execute unless block ~ ~-1 ~ #expai:non_solids if block ~ ~ ~ #expai:non_solids if block ~ ~1 ~ #expai:non_solids if block ~ ~ ~-1 #expai:non_solids run scoreboard players set @s expai.jump_block_below 1
+execute unless block ~ ~-1 ~ #expai:non_solids if block ~ ~ ~ #expai:non_solids if block ~ ~1 ~ #expai:non_solids run scoreboard players set @s expai.jump_block_below 1
 
 tellraw @a[tag=expai.debug] [{score:{name: "@s",objective: expai.jump_gap_roof_least_amount},color: red},{score:{name: "@s",objective: expai.jump_gap_roof_most_amount},color: blue},{score:{name: "@s",objective: expai.jump_gap_length},color: gold},{score:{name: "@s",objective: expai.jump_block_above},color: white},{score:{name: "@s",objective: expai.jump_block_below},color: gray}]
 
 ##Fail if in way
-execute unless block ~ ~1 ~ #expai:non_solids unless block ~ ~2 ~ #expai:non_solids run return fail
+execute \
+unless block ~ ~1 ~ #expai:non_solids \
+unless block ~ ~2 ~ #expai:non_solids \
+run return fail
 
 # Above Jump
-execute unless block ~ ~1 ~ #expai:non_solids if block ~ ~2 ~ #expai:non_solids if block ~ ~3 ~ #expai:non_solids run return run function expai:raycast/jump/gap_determiner_detect
+execute \
+unless block ~ ~1 ~ #expai:non_solids \
+if block ~ ~2 ~ #expai:non_solids \
+if block ~ ~3 ~ #expai:non_solids \
+run return run function expai:raycast/jump/gap_determiner_detect
+
 # Below Jump
-execute unless block ~ ~-1 ~ #expai:non_solids if block ~ ~ ~ #expai:non_solids if block ~ ~1 ~ #expai:non_solids if block ^ ^-1 ^-1 #expai:non_solids run return run function expai:raycast/jump/gap_determiner_detect
+execute \
+unless block ~ ~-1 ~ #expai:non_solids \
+if block ~ ~ ~ #expai:non_solids \
+if block ~ ~1 ~ #expai:non_solids \
+run return run function expai:raycast/jump/gap_determiner_detect
+
 # Same Level Jump
-execute unless block ~ ~ ~ #expai:non_solids if block ~ ~1 ~ #expai:non_solids if block ~ ~2 ~ #expai:non_solids run return run function expai:raycast/jump/gap_determiner_detect
+execute \
+unless block ~ ~ ~ #expai:non_solids \
+if block ~ ~1 ~ #expai:non_solids \
+if block ~ ~2 ~ #expai:non_solids \
+run return run function expai:raycast/jump/gap_determiner_detect
 
 ##Move
 tp ~ ~ ~

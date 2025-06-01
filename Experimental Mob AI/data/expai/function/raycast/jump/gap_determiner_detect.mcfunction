@@ -9,6 +9,4 @@ scoreboard players operation #Saved expai.jump_block_below = @s expai.jump_block
 scoreboard players operation #CanJump expai.condition = @s expai.condition
 
 function expai:raycast/jump/detection_results/sort/roofed/jump_roofed
-function expai:raycast/jump/detection_results/sort/jump_down
 function expai:raycast/jump/detection_results/sort/jump_up
-function expai:raycast/jump/detection_results/sort/sprint_jump_up
