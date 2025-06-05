@@ -23,5 +23,5 @@ scoreboard objectives add expai.datafix dummy
 
 ##Start the Data Pack
 schedule function expai:start 1.5s
-##BugFixer
-function expai:datafixer
+##DataFixer
+scoreboard players set #Current expai.datafix 1
