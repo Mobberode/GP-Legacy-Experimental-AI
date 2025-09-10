@@ -1,6 +1,3 @@
 {
-    "replace":false,
-"values": [
-    "expai:load","expai:ai_actions/sprint_jump/duration_loop"
-  ]
+  "values": ["expai:load"]
 }

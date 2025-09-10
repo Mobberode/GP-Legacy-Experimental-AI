@@ -1,1 +1,1 @@
-execute if entity @n[tag=expai.is_target,dz=5,dx=5,dy=1] run function expai:behaviour/creeper/towards_target
+execute positioned -2 -1 -2 if entity @n[tag=expai.is_target,dz=4,dx=2,dy=4] run function expai:behaviour/creeper/towards_target

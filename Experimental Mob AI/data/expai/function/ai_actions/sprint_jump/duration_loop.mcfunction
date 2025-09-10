@@ -1,1 +1,0 @@
-execute as @e[scores={expai.spint_jumping_pause_duration=1..}] run function expai:ai_actions/sprint_jump/duration_tick
