@@ -1,1 +1,1 @@
-effect give @e[distance=..10,type=#expai:hostile] regeneration 5 0
+effect give @e[distance=..10,x=0,type=#expai:hostile] regeneration 5 0

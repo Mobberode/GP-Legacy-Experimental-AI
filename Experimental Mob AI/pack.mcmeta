@@ -1,7 +1,7 @@
 {
   "id": "expai",
   "pack": {
-    "pack_format": 86,
-    "description": "Pack Format 86 - 1.21.6 <-> 25w37a, Glacier Legacy, Release 6B"
+    "pack_format": 94,
+    "description": "Pack Format 94 - 1.21.11, Glacier Legacy, Release 6B"
   }
 }

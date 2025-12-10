@@ -1,0 +1,1 @@
+execute anchored eyes facing entity @n[x=0,tag=expai.is_target] eyes run rotate @s ~ ~

@@ -1,4 +1,5 @@
 scoreboard objectives add expai.behaviour_level dummy
+scoreboard objectives add expai.behaviour_time dummy
 
 scoreboard objectives add expai.raycast dummy
 scoreboard objectives add expai.raycast_steps dummy
