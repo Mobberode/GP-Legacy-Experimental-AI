@@ -24,6 +24,7 @@ Code should use most available optimizations, if possible, like macro caching an
 
 # Glacier Players
 Glacier Players was bundled into EXPAI before being split. Glacier Players are designed to mimic real players.
+
 [Modrinth](https://modrinth.com/project/glacier-players)\
 [GitHub](https://github.com/Mobberode/Glacier-Players)\
 [Planet Minecraft](https://www.planetminecraft.com/data-pack/glacier-players)
